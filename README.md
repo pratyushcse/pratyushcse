@@ -1,7 +1,3 @@
-<!-- =========================================================
-PRATYUSH // WORLD-CLASS GITHUB PROFILE
-SVG-FIRST • RESPONSIVE • ANIMATED • GITHUB-COMPATIBLE
-========================================================= -->
 
 <p align="center">
   <img
@@ -52,10 +48,6 @@ SVG-FIRST • RESPONSIVE • ANIMATED • GITHUB-COMPATIBLE
 
 <br/>
 
-<!-- =========================================================
-SELECTED ENGINEERING WORK
-========================================================= -->
-
 <a href="https://github.com/pratyushcse/AMJ_Enterprises">
   <img
     src="./assets/project-amj.svg"
@@ -87,10 +79,6 @@ SELECTED ENGINEERING WORK
 <br/>
 <br/>
 
-<!-- =========================================================
-DEVELOPER COMMAND CENTER
-========================================================= -->
-
 <p align="center">
   <img
     src="./assets/command-center.svg"
@@ -101,10 +89,6 @@ DEVELOPER COMMAND CENTER
 
 <br/>
 
-<!-- =========================================================
-GITHUB INTELLIGENCE
-========================================================= -->
-
 <p align="center">
   <img
     src="./assets/stats-header.svg"
@@ -117,38 +101,9 @@ GITHUB INTELLIGENCE
 
 <p align="center">
   <img
-    width="49%"
-    src="https://github-readme-stats.vercel.app/api?username=pratyushcse&show_icons=true&hide_border=true&bg_color=07070A&title_color=8B5CF6&icon_color=22D3EE&text_color=F8FAFC&ring_color=8B5CF6&rank_icon=github"
-    alt="Pratyush GitHub Statistics"
-  />
-
-  <img
-    width="49%"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=pratyushcse&layout=compact&hide_border=true&bg_color=07070A&title_color=8B5CF6&text_color=F8FAFC"
-    alt="Pratyush Most Used Languages"
-  />
-</p>
-
-<br/>
-
-<p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=pratyushcse&theme=transparent&hide_border=true&background=07070A&ring=8B5CF6&fire=22D3EE&currStreakLabel=A78BFA&sideLabels=F8FAFC&dates=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC"
-    alt="Pratyush GitHub Streak"
-  />
-</p>
-
-<br/>
-
-<!-- =========================================================
-CONTRIBUTION ACTIVITY
-========================================================= -->
-
-<p align="center">
-  <img
-    src="./assets/stats-header.svg"
+    src="./assets/github-dashboard.svg"
     width="100%"
-    alt="Pratyush GitHub Intelligence"
+    alt="Pratyush GitHub Developer Dashboard"
   />
 </p>
 
@@ -171,11 +126,8 @@ CONTRIBUTION ACTIVITY
     >
   </picture>
 </p>
-<br/>
 
-<!-- =========================================================
-CONTACT / CTA
-========================================================= -->
+<br/>
 
 <a href="https://pratyush.online">
   <img
@@ -188,44 +140,9 @@ CONTACT / CTA
 <br/>
 
 <p align="center">
-
-  <a href="https://pratyush.online">
-    <img
-      src="https://img.shields.io/badge/PORTFOLIO-8B5CF6?style=for-the-badge&logo=googlechrome&logoColor=white"
-      alt="Pratyush Portfolio"
-    />
-  </a>
-
-  <a href="mailto:pratyushpoojary974@gmail.com">
-    <img
-      src="https://img.shields.io/badge/EMAIL-22D3EE?style=for-the-badge&logo=gmail&logoColor=111827"
-      alt="Email Pratyush"
-    />
-  </a>
-
-  <a href="https://github.com/pratyushcse">
-    <img
-      src="https://img.shields.io/badge/GITHUB-111827?style=for-the-badge&logo=github&logoColor=white"
-      alt="Pratyush GitHub"
-    />
-  </a>
-
-</p>
-
-<br/>
-
-<!-- =========================================================
-FOOTER
-========================================================= -->
-
-<p align="center">
   <img
     src="./assets/footer.svg"
     width="100%"
     alt="Pratyush Developer Footer"
   />
 </p>
-
-<!-- =========================================================
-END // PRATYUSH
-========================================================= -->
