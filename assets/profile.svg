@@ -1,0 +1,894 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+  width="1200" height="4720"
+  viewBox="0 0 1200 4720"
+  preserveAspectRatio="xMidYMin meet">
+
+<defs>
+  <!-- =====================================================
+       GLOBAL VISUAL SYSTEM
+  ====================================================== -->
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#020207"/>
+    <stop offset="48%" stop-color="#090512"/>
+    <stop offset="100%" stop-color="#021018"/>
+  </linearGradient>
+
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity=".05"/>
+    <stop offset="100%" stop-color="#FFFFFF" stop-opacity=".012"/>
+  </linearGradient>
+
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8B5CF6">
+      <animate attributeName="stop-color"
+        values="#8B5CF6;#A78BFA;#22D3EE;#8B5CF6"
+        dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="50%" stop-color="#A78BFA">
+      <animate attributeName="stop-color"
+        values="#A78BFA;#22D3EE;#8B5CF6;#A78BFA"
+        dur="8s" repeatCount="indefinite"/>
+    </stop>
+    <stop offset="100%" stop-color="#22D3EE">
+      <animate attributeName="stop-color"
+        values="#22D3EE;#8B5CF6;#A78BFA;#22D3EE"
+        dur="8s" repeatCount="indefinite"/>
+    </stop>
+  </linearGradient>
+
+  <linearGradient id="accentStatic" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#8B5CF6"/>
+    <stop offset="50%" stop-color="#A78BFA"/>
+    <stop offset="100%" stop-color="#22D3EE"/>
+  </linearGradient>
+
+  <radialGradient id="purpleGlow">
+    <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".36"/>
+    <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
+  </radialGradient>
+
+  <radialGradient id="cyanGlow">
+    <stop offset="0%" stop-color="#22D3EE" stop-opacity=".27"/>
+    <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
+  </radialGradient>
+
+  <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+    <path d="M44 0H0V44" fill="none" stroke="#8B5CF6" stroke-opacity=".045"/>
+  </pattern>
+
+  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+    <circle cx="2" cy="2" r="1" fill="#22D3EE" fill-opacity=".04"/>
+  </pattern>
+
+  <filter id="blur" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="42"/>
+  </filter>
+
+  <filter id="glow" x="-120%" y="-120%" width="340%" height="340%">
+    <feGaussianBlur stdDeviation="5" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <!-- HERO TYPING -->
+  <clipPath id="heroType1"><rect x="0" y="-28" width="0" height="42">
+    <animate attributeName="width" values="0;0;510;510;0;0"
+      keyTimes="0;.02;.16;.24;.28;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <clipPath id="heroType2"><rect x="0" y="-28" width="0" height="42">
+    <animate attributeName="width" values="0;0;560;560;0;0"
+      keyTimes="0;.30;.44;.52;.56;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <clipPath id="heroType3"><rect x="0" y="-28" width="0" height="42">
+    <animate attributeName="width" values="0;0;610;610;0"
+      keyTimes="0;.58;.72;.91;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+
+  <!-- ABOUT TYPING -->
+  <clipPath id="aboutType1"><rect x="0" y="-26" width="0" height="38">
+    <animate attributeName="width" values="0;0;620;620;0;0"
+      keyTimes="0;.03;.18;.28;.32;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <clipPath id="aboutType2"><rect x="0" y="-26" width="0" height="38">
+    <animate attributeName="width" values="0;0;660;660;0;0"
+      keyTimes="0;.34;.49;.59;.63;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+  <clipPath id="aboutType3"><rect x="0" y="-26" width="0" height="38">
+    <animate attributeName="width" values="0;0;700;700;0"
+      keyTimes="0;.65;.80;.95;1" dur="12s" repeatCount="indefinite"/>
+  </rect></clipPath>
+</defs>
+
+<!-- =========================================================
+     GLOBAL CANVAS
+========================================================= -->
+<rect width="1200" height="4720" fill="#020207"/>
+<rect width="1200" height="4720" fill="url(#dots)"/>
+
+<!-- moving vertical energy rail -->
+<rect x="18" y="0" width="2" height="4720" fill="#8B5CF6" opacity=".08"/>
+<rect x="1180" y="0" width="2" height="4720" fill="#22D3EE" opacity=".08"/>
+<rect x="18" y="0" width="2" height="220" fill="url(#accent)">
+  <animate attributeName="y" values="-220;4720;-220" dur="18s" repeatCount="indefinite"/>
+</rect>
+<rect x="1180" y="0" width="2" height="220" fill="url(#accent)">
+  <animate attributeName="y" values="4720;-220;4720" dur="22s" repeatCount="indefinite"/>
+</rect>
+
+<!-- =========================================================
+     01 — HERO // DIGITAL IDENTITY
+========================================================= -->
+<g transform="translate(20 20)">
+  <rect width="1160" height="560" rx="34" fill="url(#bg)"/>
+  <rect width="1160" height="560" rx="34" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="558" rx="33"
+    fill="none" stroke="url(#accent)" stroke-opacity=".44"/>
+
+  <ellipse cx="150" cy="115" rx="310" ry="240"
+    fill="url(#purpleGlow)" filter="url(#blur)">
+    <animate attributeName="cx" values="150;360;150" dur="10s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="115;205;115" dur="8s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1010" cy="400" rx="300" ry="230"
+    fill="url(#cyanGlow)" filter="url(#blur)">
+    <animate attributeName="cx" values="1010;885;1010" dur="11s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="400;235;400" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- status -->
+  <rect x="46" y="38" width="246" height="42" rx="21"
+    fill="#FFFFFF" fill-opacity=".03" stroke="#8B5CF6" stroke-opacity=".42"/>
+  <circle cx="72" cy="59" r="5.5" fill="#22D3EE">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="72" cy="59" r="12" fill="none" stroke="#22D3EE" stroke-opacity=".25">
+    <animate attributeName="r" values="8;18;8" dur="2.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".35;0;.35" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="95" y="65"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="2" fill="#C4B5FD">
+    PRATYUSH // ONLINE
+  </text>
+
+  <text x="580" y="220" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="104" font-weight="900" letter-spacing="9"
+    fill="url(#accent)" filter="url(#glow)">PRATYUSH</text>
+
+  <text x="580" y="280" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="23" font-weight="700" fill="#E2E8F0">
+    Full-Stack Developer • AI/ML Enthusiast • Freelance Developer
+  </text>
+
+  <text x="580" y="324" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="16" fill="#94A3B8">
+    Building intelligent software, scalable systems &amp; memorable digital experiences.
+  </text>
+
+  <!-- live typing shell -->
+  <rect x="265" y="360" width="630" height="104" rx="24"
+    fill="#02040A" fill-opacity=".84" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <text x="300" y="390"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="11" fill="#64748B" letter-spacing="1.6">
+    LIVE_PROCESS // identity.stream
+  </text>
+  <line x1="300" y1="404" x2="862" y2="404" stroke="#FFFFFF" stroke-opacity=".05"/>
+
+  <g transform="translate(310 438)">
+    <text x="0" y="0"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="17" fill="#22D3EE">&gt;</text>
+
+    <g clip-path="url(#heroType1)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="700" fill="#F8FAFC">
+        Building full-stack digital experiences...
+      </text>
+    </g>
+    <g clip-path="url(#heroType2)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="700" fill="#F8FAFC">
+        Learning AI / ML + advanced Python...
+      </text>
+    </g>
+    <g clip-path="url(#heroType3)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="700" fill="#F8FAFC">
+        Exploring GenAI, LLMs &amp; intelligent systems...
+      </text>
+    </g>
+  </g>
+
+  <rect x="842" y="421" width="8" height="22" rx="1" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0;1" dur=".75s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- orbit glyphs -->
+  <g opacity=".6">
+    <circle cx="120" cy="280" r="40" fill="none" stroke="#8B5CF6" stroke-opacity=".18" stroke-dasharray="5 10">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 120 280" to="360 120 280" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1045" cy="245" r="48" fill="none" stroke="#22D3EE" stroke-opacity=".14" stroke-dasharray="6 12">
+      <animateTransform attributeName="transform" type="rotate"
+        from="360 1045 245" to="0 1045 245" dur="15s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</g>
+
+<!-- =========================================================
+     02 — ABOUT // LIVING IDENTITY TERMINAL
+========================================================= -->
+<g transform="translate(20 610)">
+  <rect width="1160" height="610" rx="34" fill="url(#bg)"/>
+  <rect width="1160" height="610" rx="34" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="608" rx="33"
+    fill="none" stroke="url(#accent)" stroke-opacity=".36"/>
+
+  <ellipse cx="120" cy="120" rx="260" ry="210" fill="url(#purpleGlow)" filter="url(#blur)">
+    <animate attributeName="cx" values="120;280;120" dur="9s" repeatCount="indefinite"/>
+  </ellipse>
+  <ellipse cx="1040" cy="440" rx="260" ry="220" fill="url(#cyanGlow)" filter="url(#blur)">
+    <animate attributeName="cy" values="440;280;440" dur="10s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <rect x="46" y="34" width="190" height="40" rx="20"
+    fill="#8B5CF6" fill-opacity=".08" stroke="#8B5CF6" stroke-opacity=".38"/>
+  <circle cx="72" cy="54" r="5.5" fill="#22D3EE">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="95" y="60"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="2" fill="#C4B5FD">
+    IDENTITY // LIVE
+  </text>
+
+  <text x="48" y="143"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="48" font-weight="900">
+    <tspan fill="#F8FAFC">WHO IS </tspan>
+    <tspan fill="url(#accent)">PRATYUSH?</tspan>
+  </text>
+
+  <!-- terminal -->
+  <rect x="50" y="180" width="760" height="238" rx="22"
+    fill="#02040A" fill-opacity=".78" stroke="#FFFFFF" stroke-opacity=".08"/>
+  <circle cx="78" cy="205" r="5" fill="#FF5F57"/>
+  <circle cx="98" cy="205" r="5" fill="#FEBB2E"/>
+  <circle cx="118" cy="205" r="5" fill="#28C840"/>
+  <text x="143" y="211"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="11" fill="#64748B" letter-spacing="1.4">
+    pratyush@developer:~/identity
+  </text>
+  <line x1="72" y1="230" x2="790" y2="230" stroke="#FFFFFF" stroke-opacity=".05"/>
+
+  <g transform="translate(78 275)">
+    <text x="0" y="0" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="17" fill="#22D3EE">&gt;</text>
+    <g clip-path="url(#aboutType1)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="600" fill="#F8FAFC">
+        I build full-stack digital experiences.
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(78 324)">
+    <text x="0" y="0" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="17" fill="#8B5CF6">&gt;</text>
+    <g clip-path="url(#aboutType2)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="600" fill="#F8FAFC">
+        I am learning AI, ML &amp; advanced Python.
+      </text>
+    </g>
+  </g>
+
+  <g transform="translate(78 373)">
+    <text x="0" y="0" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="17" fill="#A78BFA">&gt;</text>
+    <g clip-path="url(#aboutType3)">
+      <text x="28" y="0"
+        font-family="Consolas, Monaco, 'Courier New', monospace"
+        font-size="17" font-weight="600" fill="#F8FAFC">
+        I explore GenAI, LLMs &amp; intelligent systems.
+      </text>
+    </g>
+  </g>
+
+  <rect x="770" y="355" width="9" height="22" rx="1" fill="#22D3EE">
+    <animate attributeName="opacity" values="1;0;1" dur=".75s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- identity core -->
+  <g transform="translate(850 170)">
+    <circle cx="135" cy="125" r="110" fill="#8B5CF6" fill-opacity=".025"
+      stroke="#8B5CF6" stroke-opacity=".17"/>
+    <circle cx="135" cy="125" r="84" fill="none"
+      stroke="#22D3EE" stroke-opacity=".15" stroke-dasharray="7 12">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 135 125" to="360 135 125" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="135" cy="125" r="55" fill="#8B5CF6" fill-opacity=".07"
+      stroke="url(#accent)" stroke-opacity=".36">
+      <animate attributeName="r" values="52;58;52" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="135" y="120" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="24" font-weight="900" fill="#F8FAFC">P</text>
+    <text x="135" y="145" text-anchor="middle"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="9" letter-spacing="1.5" fill="#22D3EE">DEV CORE</text>
+
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 135 125" to="360 135 125" dur="8s" repeatCount="indefinite"/>
+      <circle cx="135" cy="14" r="7" fill="#22D3EE" filter="url(#glow)"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        from="180 135 125" to="540 135 125" dur="11s" repeatCount="indefinite"/>
+      <circle cx="135" cy="31" r="5" fill="#8B5CF6" filter="url(#glow)"/>
+    </g>
+  </g>
+
+  <!-- dynamic mode bar -->
+  <rect x="50" y="458" width="1060" height="92" rx="20"
+    fill="#FFFFFF" fill-opacity=".025" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <text x="78" y="493"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="2" fill="#64748B">ACTIVE MODE</text>
+
+  <text x="245" y="495"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17" font-weight="800" fill="#8B5CF6" opacity="1">
+    FULL-STACK DEVELOPER
+    <animate attributeName="opacity" values="1;1;0;0;0;0;1"
+      keyTimes="0;.26;.31;.34;.63;.95;1" dur="9s" repeatCount="indefinite"/>
+  </text>
+  <text x="245" y="495"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17" font-weight="800" fill="#22D3EE" opacity="0">
+    AI / ML EXPLORER
+    <animate attributeName="opacity" values="0;0;1;1;0;0;0"
+      keyTimes="0;.30;.35;.61;.66;.99;1" dur="9s" repeatCount="indefinite"/>
+  </text>
+  <text x="245" y="495"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="17" font-weight="800" fill="#A78BFA" opacity="0">
+    SOFTWARE ENGINEER IN PROGRESS
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0"
+      keyTimes="0;.3;.60;.65;.70;.94;1" dur="9s" repeatCount="indefinite"/>
+  </text>
+
+  <circle cx="990" cy="492" r="6" fill="#22D3EE">
+    <animate attributeName="opacity" values=".25;1;.25" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="1010" y="498"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" fill="#C4B5FD">EVOLVING</text>
+
+  <rect x="30" y="100" width="1100" height="1" fill="#22D3EE" opacity=".08">
+    <animate attributeName="y" values="100;575;100" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- =========================================================
+     03 — CURRENT FOCUS // SIGNAL BOARD
+========================================================= -->
+<g transform="translate(20 1250)">
+  <rect width="1160" height="410" rx="32" fill="url(#bg)"/>
+  <rect width="1160" height="410" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="408" rx="31"
+    fill="none" stroke="url(#accent)" stroke-opacity=".34"/>
+
+  <text x="48" y="54"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="3" fill="#22D3EE">
+    LIVE SIGNALS // CURRENT FOCUS
+  </text>
+
+  <text x="48" y="112"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42" font-weight="900">
+    <tspan fill="#F8FAFC">CURRENT </tspan>
+    <tspan fill="url(#accent)">FOCUS</tspan>
+  </text>
+
+  <!-- left progress matrix -->
+  <g transform="translate(48 150)">
+    <rect width="680" height="205" rx="20"
+      fill="#FFFFFF" fill-opacity=".025" stroke="#FFFFFF" stroke-opacity=".07"/>
+
+    <text x="26" y="42" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#8B5CF6">LEARNING</text>
+    <text x="170" y="42" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">
+      AI/ML + Advanced Python + Software Engineering
+    </text>
+
+    <text x="26" y="98" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">BUILDING</text>
+    <text x="170" y="98" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">
+      Full-Stack Web Applications + AI Projects
+    </text>
+
+    <text x="26" y="154" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#A78BFA">EXPLORING</text>
+    <text x="170" y="154" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">
+      GenAI + LLMs + Intelligent Applications
+    </text>
+
+    <rect x="26" y="178" width="620" height="6" rx="3" fill="#FFFFFF" fill-opacity=".05"/>
+    <rect x="26" y="178" width="150" height="6" rx="3" fill="url(#accent)">
+      <animate attributeName="x" values="26;496;26" dur="4.6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- right radar -->
+  <g transform="translate(790 128)">
+    <circle cx="150" cy="120" r="104" fill="#8B5CF6" fill-opacity=".025"
+      stroke="#8B5CF6" stroke-opacity=".16"/>
+    <circle cx="150" cy="120" r="74" fill="none" stroke="#22D3EE" stroke-opacity=".13"/>
+    <circle cx="150" cy="120" r="42" fill="none" stroke="#A78BFA" stroke-opacity=".15"/>
+    <line x1="150" y1="16" x2="150" y2="224" stroke="#FFFFFF" stroke-opacity=".05"/>
+    <line x1="46" y1="120" x2="254" y2="120" stroke="#FFFFFF" stroke-opacity=".05"/>
+    <path d="M150 120 L150 28 A92 92 0 0 1 220 62 Z"
+      fill="#22D3EE" fill-opacity=".08">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 150 120" to="360 150 120" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="150" cy="120" r="7" fill="#22D3EE" filter="url(#glow)">
+      <animate attributeName="r" values="5;8;5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="150" y="255" text-anchor="middle"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" letter-spacing="1.5" fill="#64748B">
+      KNOWLEDGE RADAR
+    </text>
+  </g>
+</g>
+
+<!-- =========================================================
+     04 — TECHNOLOGY // ORBITING TOOL CONSTELLATION
+========================================================= -->
+<g transform="translate(20 1690)">
+  <rect width="1160" height="720" rx="32" fill="url(#bg)"/>
+  <rect width="1160" height="720" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="718" rx="31"
+    fill="none" stroke="url(#accent)" stroke-opacity=".34"/>
+
+  <text x="48" y="54"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="3" fill="#22D3EE">
+    SYSTEM // TECHNOLOGY CONSTELLATION
+  </text>
+
+  <text x="48" y="112"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42" font-weight="900">
+    <tspan fill="#F8FAFC">TECHNOLOGY </tspan>
+    <tspan fill="url(#accent)">CONSTELLATION</tspan>
+  </text>
+
+  <!-- left categories -->
+  <g transform="translate(48 150)">
+    <rect width="500" height="112" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="25" y="34" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#8B5CF6">01 // LANGUAGES</text>
+    <text x="25" y="73" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">Python • Java • JavaScript • TypeScript</text>
+    <text x="25" y="99" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">C++ • C</text>
+  </g>
+
+  <g transform="translate(48 280)">
+    <rect width="500" height="112" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="25" y="34" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">02 // FRONTEND</text>
+    <text x="25" y="73" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">HTML • CSS • JavaScript • React</text>
+    <text x="25" y="99" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">Next.js • Tailwind CSS</text>
+  </g>
+
+  <g transform="translate(48 410)">
+    <rect width="500" height="112" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="25" y="34" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#8B5CF6">03 // BACKEND + DATA</text>
+    <text x="25" y="73" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">FastAPI • Spring Boot • Node.js</text>
+    <text x="25" y="99" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">MySQL • MongoDB • SQLite</text>
+  </g>
+
+  <g transform="translate(48 540)">
+    <rect width="500" height="112" rx="20" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="25" y="34" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">04 // AI + TOOLS</text>
+    <text x="25" y="73" font-family="Arial, Helvetica, sans-serif"
+      font-size="17" font-weight="700" fill="#F8FAFC">PyTorch • Scikit-learn • OpenCV</text>
+    <text x="25" y="99" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">Transformers • Git • Docker • Linux • VS Code</text>
+  </g>
+
+  <!-- right orbit engine -->
+  <g transform="translate(650 170)">
+    <circle cx="235" cy="235" r="190" fill="#8B5CF6" fill-opacity=".018"
+      stroke="#8B5CF6" stroke-opacity=".11"/>
+    <circle cx="235" cy="235" r="145" fill="none"
+      stroke="#22D3EE" stroke-opacity=".10" stroke-dasharray="8 13">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 235 235" to="360 235 235" dur="24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="235" cy="235" r="92" fill="none"
+      stroke="#A78BFA" stroke-opacity=".12" stroke-dasharray="5 10">
+      <animateTransform attributeName="transform" type="rotate"
+        from="360 235 235" to="0 235 235" dur="17s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="235" cy="235" r="62" fill="#8B5CF6" fill-opacity=".06"
+      stroke="url(#accent)" stroke-opacity=".4">
+      <animate attributeName="r" values="58;65;58" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="235" y="229" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="22" font-weight="900" fill="#F8FAFC">STACK</text>
+    <text x="235" y="253" text-anchor="middle"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="10" letter-spacing="1.5" fill="#22D3EE">LIVE CORE</text>
+
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 235 235" to="360 235 235" dur="10s" repeatCount="indefinite"/>
+      <circle cx="235" cy="43" r="9" fill="#22D3EE" filter="url(#glow)"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        from="120 235 235" to="480 235 235" dur="13s" repeatCount="indefinite"/>
+      <circle cx="235" cy="89" r="8" fill="#8B5CF6" filter="url(#glow)"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        from="240 235 235" to="600 235 235" dur="16s" repeatCount="indefinite"/>
+      <circle cx="235" cy="135" r="7" fill="#A78BFA" filter="url(#glow)"/>
+    </g>
+
+    <text x="235" y="485" text-anchor="middle"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" letter-spacing="2" fill="#64748B">
+      BUILD • LEARN • EXPAND
+    </text>
+  </g>
+
+  <rect x="25" y="135" width="1110" height="1" fill="#22D3EE" opacity=".08">
+    <animate attributeName="y" values="135;680;135" dur="9s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- =========================================================
+     05 — PROJECTS // HOLOGRAPHIC LAUNCH BAY
+========================================================= -->
+<g transform="translate(20 2440)">
+  <rect width="1160" height="900" rx="32" fill="url(#bg)"/>
+  <rect width="1160" height="900" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="898" rx="31"
+    fill="none" stroke="url(#accent)" stroke-opacity=".34"/>
+
+  <text x="48" y="54"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="3" fill="#22D3EE">
+    WORK // SELECTED ENGINEERING
+  </text>
+
+  <text x="48" y="112"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42" font-weight="900">
+    <tspan fill="#F8FAFC">PROJECT </tspan>
+    <tspan fill="url(#accent)">LAUNCH BAY</tspan>
+  </text>
+
+  <!-- Project 1 -->
+  <g transform="translate(48 155)">
+    <rect width="1064" height="198" rx="24" fill="url(#glass)"
+      stroke="#8B5CF6" stroke-opacity=".18"/>
+    <rect x="0" y="0" width="7" height="198" rx="3.5" fill="#8B5CF6">
+      <animate attributeName="height" values="80;198;80" dur="3.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="34" y="42" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">PROJECT // 001</text>
+    <text x="34" y="88" font-family="Arial, Helvetica, sans-serif"
+      font-size="29" font-weight="900" fill="#F8FAFC">AMJ ENTERPRISES</text>
+    <text x="34" y="122" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" font-weight="700" fill="#A78BFA">LED Wall Rental &amp; Visual Solutions</text>
+    <text x="34" y="156" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">
+      Business website built to showcase LED rental services and visual installations.
+    </text>
+    <text x="34" y="181" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" fill="#64748B">HTML • CSS • JAVASCRIPT • RESPONSIVE DESIGN</text>
+
+    <g transform="translate(904 42)">
+      <circle cx="55" cy="55" r="48" fill="#8B5CF6" fill-opacity=".04"
+        stroke="#8B5CF6" stroke-opacity=".16"/>
+      <circle cx="55" cy="55" r="28" fill="none" stroke="#22D3EE"
+        stroke-opacity=".18" stroke-dasharray="4 7">
+        <animateTransform attributeName="transform" type="rotate"
+          from="0 55 55" to="360 55 55" dur="7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="55" r="6" fill="#22D3EE">
+        <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Project 2 -->
+  <g transform="translate(48 380)">
+    <rect width="1064" height="198" rx="24" fill="url(#glass)"
+      stroke="#22D3EE" stroke-opacity=".16"/>
+    <rect x="0" y="0" width="7" height="198" rx="3.5" fill="#22D3EE">
+      <animate attributeName="height" values="120;198;120" dur="4.3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="34" y="42" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">PROJECT // 002</text>
+    <text x="34" y="88" font-family="Arial, Helvetica, sans-serif"
+      font-size="29" font-weight="900" fill="#F8FAFC">GRACE ENTERPRISES</text>
+    <text x="34" y="122" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" font-weight="700" fill="#A78BFA">Professional Deep Cleaning Platform</text>
+    <text x="34" y="156" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">
+      Responsive service-business website for deep-cleaning discovery and customer contact.
+    </text>
+    <text x="34" y="181" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" fill="#64748B">HTML • CSS • JAVASCRIPT • RESPONSIVE DESIGN</text>
+
+    <g transform="translate(904 42)">
+      <circle cx="55" cy="55" r="48" fill="#22D3EE" fill-opacity=".035"
+        stroke="#22D3EE" stroke-opacity=".16"/>
+      <path d="M55 18 L55 92 M18 55 L92 55" stroke="#22D3EE" stroke-opacity=".18">
+        <animateTransform attributeName="transform" type="rotate"
+          from="0 55 55" to="360 55 55" dur="9s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="55" cy="55" r="6" fill="#8B5CF6">
+        <animate attributeName="opacity" values=".2;1;.2" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- Project 3 -->
+  <g transform="translate(48 605)">
+    <rect width="1064" height="198" rx="24" fill="url(#glass)"
+      stroke="#8B5CF6" stroke-opacity=".16"/>
+    <rect x="0" y="0" width="7" height="198" rx="3.5" fill="#A78BFA">
+      <animate attributeName="height" values="90;198;90" dur="4.8s" repeatCount="indefinite"/>
+    </rect>
+    <text x="34" y="42" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">PROJECT // 003</text>
+    <text x="34" y="88" font-family="Arial, Helvetica, sans-serif"
+      font-size="29" font-weight="900" fill="#F8FAFC">ADITYA BEACH VILLA</text>
+    <text x="34" y="122" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" font-weight="700" fill="#A78BFA">Villa Rental &amp; Hospitality Platform</text>
+    <text x="34" y="156" font-family="Arial, Helvetica, sans-serif"
+      font-size="15" fill="#94A3B8">
+      Modern villa website for daily stays, property discovery and booking enquiries.
+    </text>
+    <text x="34" y="181" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" fill="#64748B">FULL-STACK DEVELOPMENT • CURRENTLY BUILDING</text>
+
+    <g transform="translate(904 42)">
+      <circle cx="55" cy="55" r="48" fill="#8B5CF6" fill-opacity=".035"
+        stroke="#8B5CF6" stroke-opacity=".16"/>
+      <circle cx="55" cy="55" r="32" fill="none"
+        stroke="#A78BFA" stroke-opacity=".16" stroke-dasharray="3 8">
+        <animateTransform attributeName="transform" type="rotate"
+          from="360 55 55" to="0 55 55" dur="8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="55" cy="55" r="6" fill="#22D3EE">
+        <animate attributeName="opacity" values=".2;1;.2" dur="1s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <rect x="25" y="135" width="1110" height="1" fill="#22D3EE" opacity=".08">
+    <animate attributeName="y" values="135;850;135" dur="10s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- =========================================================
+     06 — ENGINEERING DASHBOARD // LIVE OPERATING MODE
+========================================================= -->
+<g transform="translate(20 3370)">
+  <rect width="1160" height="600" rx="32" fill="url(#bg)"/>
+  <rect width="1160" height="600" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="598" rx="31"
+    fill="none" stroke="url(#accent)" stroke-opacity=".35"/>
+
+  <text x="48" y="54"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="3" fill="#22D3EE">
+    PRATYUSH OS // ENGINEERING DASHBOARD
+  </text>
+
+  <text x="48" y="112"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42" font-weight="900">
+    <tspan fill="#F8FAFC">ENGINEERING </tspan>
+    <tspan fill="url(#accent)">DASHBOARD</tspan>
+  </text>
+
+  <!-- three signal cards -->
+  <g transform="translate(48 155)">
+    <rect width="320" height="205" rx="22" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="26" y="38" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#8B5CF6">PRIMARY FOCUS</text>
+    <text x="26" y="84" font-family="Arial, Helvetica, sans-serif"
+      font-size="24" font-weight="900" fill="#F8FAFC">Full-Stack</text>
+    <text x="26" y="116" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" fill="#94A3B8">Software Development</text>
+    <rect x="26" y="150" width="265" height="7" rx="3.5" fill="#FFFFFF" fill-opacity=".05"/>
+    <rect x="26" y="150" width="165" height="7" rx="3.5" fill="url(#accent)">
+      <animate attributeName="width" values="95;220;95" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="26" y="185" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" fill="#64748B">BUILD MODE // ACTIVE</text>
+  </g>
+
+  <g transform="translate(420 155)">
+    <rect width="320" height="205" rx="22" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="26" y="38" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#22D3EE">CURRENT LEARNING</text>
+    <text x="26" y="84" font-family="Arial, Helvetica, sans-serif"
+      font-size="24" font-weight="900" fill="#F8FAFC">AI / ML</text>
+    <text x="26" y="116" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" fill="#94A3B8">GenAI + LLMs</text>
+    <circle cx="50" cy="165" r="7" fill="#22D3EE">
+      <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="70" y="171" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" font-weight="700" fill="#C4B5FD">ACTIVE LEARNING</text>
+  </g>
+
+  <g transform="translate(792 155)">
+    <rect width="320" height="205" rx="22" fill="url(#glass)" stroke="#FFFFFF" stroke-opacity=".07"/>
+    <text x="26" y="38" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12" font-weight="700" fill="#A78BFA">CAREER TARGET</text>
+    <text x="26" y="84" font-family="Arial, Helvetica, sans-serif"
+      font-size="24" font-weight="900" fill="#F8FAFC">Software Engineer</text>
+    <text x="26" y="116" font-family="Arial, Helvetica, sans-serif"
+      font-size="16" fill="#94A3B8">AI • Full-Stack</text>
+    <text x="26" y="170" font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="11" font-weight="700" fill="#22D3EE">BUILD → LEARN → EVOLVE</text>
+  </g>
+
+  <!-- live command strip -->
+  <rect x="48" y="395" width="1064" height="115" rx="22"
+    fill="#02040A" fill-opacity=".74" stroke="#FFFFFF" stroke-opacity=".07"/>
+  <text x="78" y="430"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="11" fill="#64748B" letter-spacing="1.4">pratyush@system:~$</text>
+  <text x="230" y="430"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="15" font-weight="700" fill="#F8FAFC">build --future --one-commit-at-a-time</text>
+  <rect x="600" y="414" width="9" height="20" fill="#8B5CF6">
+    <animate attributeName="opacity" values="1;0;1" dur=".8s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="84" cy="475" r="6" fill="#22D3EE">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="105" y="481"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" fill="#C4B5FD">STATUS // LEARNING • BUILDING • EVOLVING</text>
+  <text x="900" y="481"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" fill="#22D3EE">PRATYUSH.ONLINE</text>
+
+  <rect x="25" y="135" width="1110" height="1" fill="#22D3EE" opacity=".08">
+    <animate attributeName="y" values="135;565;135" dur="8s" repeatCount="indefinite"/>
+  </rect>
+</g>
+
+<!-- =========================================================
+     07 — CONTACT // PORTAL
+========================================================= -->
+<g transform="translate(20 4000)">
+  <rect width="1160" height="470" rx="32" fill="url(#bg)"/>
+  <rect width="1160" height="470" rx="32" fill="url(#grid)"/>
+  <rect x="1" y="1" width="1158" height="468" rx="31"
+    fill="none" stroke="url(#accent)" stroke-opacity=".38"/>
+
+  <ellipse cx="580" cy="220" rx="360" ry="210" fill="url(#purpleGlow)" filter="url(#blur)">
+    <animate attributeName="rx" values="300;390;300" dur="6s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <text x="580" y="70" text-anchor="middle"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12" font-weight="700" letter-spacing="3" fill="#22D3EE">
+    CONNECTION PORTAL // OPEN
+  </text>
+
+  <text x="580" y="145" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42" font-weight="900">
+    <tspan fill="#F8FAFC">LET'S BUILD </tspan>
+    <tspan fill="url(#accent)">SOMETHING EXCEPTIONAL</tspan>
+  </text>
+
+  <text x="580" y="190" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="16" fill="#94A3B8">
+    Software • AI • Full-Stack Development • Digital Experiences
+  </text>
+
+  <!-- portal ring -->
+  <g transform="translate(580 285)">
+    <circle cx="0" cy="0" r="70" fill="#8B5CF6" fill-opacity=".03"
+      stroke="#8B5CF6" stroke-opacity=".14"/>
+    <circle cx="0" cy="0" r="52" fill="none" stroke="#22D3EE"
+      stroke-opacity=".18" stroke-dasharray="6 10">
+      <animateTransform attributeName="transform" type="rotate"
+        from="0 0 0" to="360 0 0" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="24" fill="#8B5CF6" fill-opacity=".10"
+      stroke="url(#accent)" stroke-opacity=".45">
+      <animate attributeName="r" values="20;27;20" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="0" y="5" text-anchor="middle"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="20" font-weight="900" fill="#F8FAFC">P</text>
+  </g>
+
+  <rect x="340" y="380" width="480" height="58" rx="29"
+    fill="#8B5CF6" fill-opacity=".10" stroke="#22D3EE" stroke-opacity=".45"/>
+  <circle cx="377" cy="409" r="7" fill="#22D3EE">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="580" y="416" text-anchor="middle"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="14" font-weight="700" fill="#F8FAFC">
+    PORTFOLIO // PRATYUSH.ONLINE
+  </text>
+</g>
+
+<!-- =========================================================
+     FOOTER SIGNATURE
+========================================================= -->
+<g transform="translate(20 4500)">
+  <rect width="1160" height="180" rx="28" fill="url(#bg)"/>
+  <rect x="1" y="1" width="1158" height="178" rx="27"
+    fill="none" stroke="url(#accent)" stroke-opacity=".22"/>
+
+  <path d="M60 38H1100" stroke="url(#accentStatic)" stroke-opacity=".25"/>
+
+  <text x="580" y="88" text-anchor="middle"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="16" font-weight="700" fill="#F8FAFC">
+    &lt; Designed &amp; engineered by PRATYUSH /&gt;
+  </text>
+
+  <text x="580" y="120" text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="13" fill="#94A3B8">
+    Learning continuously • Building deliberately • Evolving one commit at a time
+  </text>
+
+  <circle cx="580" cy="150" r="4.5" fill="#22D3EE">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.3s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+</svg>
