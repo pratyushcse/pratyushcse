@@ -1,0 +1,323 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="650"
+  viewBox="0 0 1200 650"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs>
+    <linearGradient id="stackBg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#050507"/>
+      <stop offset=".55" stop-color="#0C0715"/>
+      <stop offset="1" stop-color="#041018"/>
+    </linearGradient>
+
+    <linearGradient id="stackAccent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset=".5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="650" rx="30" fill="url(#stackBg)"/>
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="648"
+    rx="29"
+    fill="none"
+    stroke="url(#stackAccent)"
+    stroke-opacity=".35"
+  />
+
+  <text
+    x="55"
+    y="58"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12"
+    font-weight="700"
+    letter-spacing="3"
+    fill="#22D3EE"
+  >
+    SYSTEM // TECHNOLOGY ARSENAL
+  </text>
+
+  <text
+    x="55"
+    y="114"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42"
+    font-weight="900"
+  >
+    <tspan fill="#F8FAFC">TECHNOLOGY </tspan>
+    <tspan fill="url(#stackAccent)">ARSENAL</tspan>
+  </text>
+
+  <g transform="translate(55 150)">
+    <rect
+      width="525"
+      height="135"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#8B5CF6"
+    >
+      01 // LANGUAGES
+    </text>
+
+    <text
+      x="28"
+      y="78"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      Python • Java • JavaScript
+    </text>
+
+    <text
+      x="28"
+      y="108"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
+      fill="#94A3B8"
+    >
+      TypeScript • C++ • C
+    </text>
+  </g>
+
+  <g transform="translate(620 150)">
+    <rect
+      width="525"
+      height="135"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#22D3EE"
+    >
+      02 // FRONTEND
+    </text>
+
+    <text
+      x="28"
+      y="78"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      HTML • CSS • JavaScript • React
+    </text>
+
+    <text
+      x="28"
+      y="108"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
+      fill="#94A3B8"
+    >
+      Next.js • Tailwind CSS
+    </text>
+  </g>
+
+  <g transform="translate(55 310)">
+    <rect
+      width="525"
+      height="135"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#8B5CF6"
+    >
+      03 // BACKEND
+    </text>
+
+    <text
+      x="28"
+      y="78"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      FastAPI • Spring Boot • Node.js
+    </text>
+
+    <text
+      x="28"
+      y="108"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
+      fill="#94A3B8"
+    >
+      REST APIs
+    </text>
+  </g>
+
+  <g transform="translate(620 310)">
+    <rect
+      width="525"
+      height="135"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#22D3EE"
+    >
+      04 // AI + ML
+    </text>
+
+    <text
+      x="28"
+      y="78"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      PyTorch • Scikit-learn • OpenCV
+    </text>
+
+    <text
+      x="28"
+      y="108"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="16"
+      fill="#94A3B8"
+    >
+      Transformers • NLP • GenAI • LLMs
+    </text>
+  </g>
+
+  <g transform="translate(55 470)">
+    <rect
+      width="525"
+      height="120"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#8B5CF6"
+    >
+      05 // DATABASES
+    </text>
+
+    <text
+      x="28"
+      y="79"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      MySQL • MongoDB • SQLite
+    </text>
+  </g>
+
+  <g transform="translate(620 470)">
+    <rect
+      width="525"
+      height="120"
+      rx="20"
+      fill="#FFFFFF"
+      fill-opacity=".025"
+      stroke="#FFFFFF"
+      stroke-opacity=".08"
+    />
+
+    <text
+      x="28"
+      y="36"
+      font-family="Consolas, Monaco, 'Courier New', monospace"
+      font-size="12"
+      font-weight="700"
+      letter-spacing="2"
+      fill="#22D3EE"
+    >
+      06 // TOOLS
+    </text>
+
+    <text
+      x="28"
+      y="79"
+      font-family="Arial, Helvetica, sans-serif"
+      font-size="18"
+      font-weight="700"
+      fill="#F8FAFC"
+    >
+      Git • GitHub • Docker • Linux • VS Code
+    </text>
+  </g>
+
+  <rect
+    x="30"
+    y="140"
+    width="1140"
+    height="1"
+    fill="#22D3EE"
+    opacity=".12"
+  >
+    <animate
+      attributeName="y"
+      values="140;620;140"
+      dur="8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+</svg>

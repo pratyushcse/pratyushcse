@@ -1,118 +1,263 @@
-<svg width="1200" height="420" viewBox="0 0 1200 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="470"
+  viewBox="0 0 1200 470"
+  preserveAspectRatio="xMidYMid meet"
+>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#050507"/>
-      <stop offset="0.5" stop-color="#0B0614"/>
-      <stop offset="1" stop-color="#030711"/>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#030308"/>
+      <stop offset="50%" stop-color="#0B0614"/>
+      <stop offset="100%" stop-color="#020A12"/>
     </linearGradient>
 
-    <linearGradient id="title" x1="260" y1="150" x2="930" y2="260" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#F8FAFC"/>
-      <stop offset="0.35" stop-color="#A78BFA"/>
-      <stop offset="0.7" stop-color="#7C3AED"/>
-      <stop offset="1" stop-color="#22D3EE"/>
+    <linearGradient id="heroTitle" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#F8FAFC">
+        <animate
+          attributeName="stop-color"
+          values="#F8FAFC;#A78BFA;#F8FAFC"
+          dur="6s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop offset="45%" stop-color="#8B5CF6">
+        <animate
+          attributeName="stop-color"
+          values="#8B5CF6;#7C3AED;#22D3EE;#8B5CF6"
+          dur="6s"
+          repeatCount="indefinite"
+        />
+      </stop>
+
+      <stop offset="100%" stop-color="#22D3EE">
+        <animate
+          attributeName="stop-color"
+          values="#22D3EE;#A78BFA;#22D3EE"
+          dur="6s"
+          repeatCount="indefinite"
+        />
+      </stop>
     </linearGradient>
 
-    <radialGradient id="glow1">
-      <stop stop-color="#7C3AED" stop-opacity="0.55"/>
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0"/>
+    <radialGradient id="heroPurpleGlow">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity=".55"/>
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="glow2">
-      <stop stop-color="#22D3EE" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    <radialGradient id="heroCyanGlow">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity=".35"/>
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0"/>
     </radialGradient>
 
-    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="18"/>
+    <pattern id="heroGrid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path
+        d="M42 0H0V42"
+        fill="none"
+        stroke="#8B5CF6"
+        stroke-opacity=".07"
+        stroke-width="1"
+      />
+    </pattern>
+
+    <filter id="heroBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
     </filter>
 
-    <filter id="textGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur stdDeviation="7" result="blur"/>
+    <filter id="heroTextGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-
-    <pattern id="grid" width="45" height="45" patternUnits="userSpaceOnUse">
-      <path d="M 45 0 L 0 0 0 45" fill="none" stroke="#8B5CF6" stroke-opacity="0.08" stroke-width="1"/>
-    </pattern>
   </defs>
 
-  <rect width="1200" height="420" rx="30" fill="url(#bg)"/>
-  <rect width="1200" height="420" rx="30" fill="url(#grid)"/>
+  <rect width="1200" height="470" rx="30" fill="url(#heroBg)"/>
+  <rect width="1200" height="470" rx="30" fill="url(#heroGrid)"/>
 
-  <circle cx="240" cy="100" r="190" fill="url(#glow1)" filter="url(#softGlow)">
-    <animate attributeName="cx" values="220;320;220" dur="8s" repeatCount="indefinite"/>
+  <ellipse
+    cx="190"
+    cy="120"
+    rx="280"
+    ry="210"
+    fill="url(#heroPurpleGlow)"
+    filter="url(#heroBlur)"
+  >
+    <animate
+      attributeName="cx"
+      values="190;340;190"
+      dur="10s"
+      repeatCount="indefinite"
+    />
+  </ellipse>
+
+  <ellipse
+    cx="1020"
+    cy="330"
+    rx="270"
+    ry="200"
+    fill="url(#heroCyanGlow)"
+    filter="url(#heroBlur)"
+  >
+    <animate
+      attributeName="cy"
+      values="330;180;330"
+      dur="9s"
+      repeatCount="indefinite"
+    />
+  </ellipse>
+
+  <rect
+    x="52"
+    y="40"
+    width="235"
+    height="42"
+    rx="21"
+    fill="#FFFFFF"
+    fill-opacity=".035"
+    stroke="#8B5CF6"
+    stroke-opacity=".45"
+  />
+
+  <circle cx="78" cy="61" r="5.5" fill="#22D3EE">
+    <animate
+      attributeName="opacity"
+      values=".2;1;.2"
+      dur="1.3s"
+      repeatCount="indefinite"
+    />
   </circle>
 
-  <circle cx="990" cy="300" r="210" fill="url(#glow2)" filter="url(#softGlow)">
-    <animate attributeName="cy" values="280;210;280" dur="9s" repeatCount="indefinite"/>
-  </circle>
-
-  <g opacity="0.32">
-    <circle cx="160" cy="80" r="2.5" fill="#C4B5FD">
-      <animate attributeName="cy" values="80;55;80" dur="4s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="1030" cy="115" r="2.5" fill="#67E8F9">
-      <animate attributeName="cy" values="115;85;115" dur="5s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="930" cy="340" r="2" fill="#A78BFA">
-      <animate attributeName="cy" values="340;315;340" dur="4.5s" repeatCount="indefinite"/>
-    </circle>
-
-    <circle cx="310" cy="350" r="2" fill="#22D3EE">
-      <animate attributeName="cy" values="350;320;350" dur="5.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <rect x="65" y="48" width="210" height="42" rx="21" fill="#FFFFFF" fill-opacity="0.035" stroke="#8B5CF6" stroke-opacity="0.45"/>
-  <circle cx="88" cy="69" r="5" fill="#22D3EE">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
-  </circle>
-  <text x="104" y="75" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
-    HELLO, I’M PRATYUSH
+  <text
+    x="98"
+    y="67"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="13"
+    font-weight="700"
+    letter-spacing="2"
+    fill="#C4B5FD"
+  >
+    DEVELOPER ONLINE
   </text>
 
-  <text x="600" y="205" text-anchor="middle" fill="url(#title)"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="104"
-        font-weight="800"
-        letter-spacing="8"
-        filter="url(#textGlow)">
+  <path
+    d="M70 115H335"
+    stroke="#8B5CF6"
+    stroke-opacity=".3"
+  />
+
+  <path
+    d="M865 115H1130"
+    stroke="#22D3EE"
+    stroke-opacity=".25"
+  />
+
+  <text
+    x="600"
+    y="235"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="100"
+    font-weight="900"
+    letter-spacing="9"
+    fill="url(#heroTitle)"
+    filter="url(#heroTextGlow)"
+  >
     PRATYUSH
   </text>
 
-  <text x="600" y="262" text-anchor="middle" fill="#C4B5FD"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="25"
-        font-weight="600">
+  <text
+    x="600"
+    y="292"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="24"
+    font-weight="700"
+    fill="#C4B5FD"
+  >
     Full-Stack Developer • AI/ML Enthusiast • Freelance Developer
   </text>
 
-  <text x="600" y="306" text-anchor="middle" fill="#94A3B8"
-        font-family="Segoe UI, Arial, sans-serif"
-        font-size="19">
+  <text
+    x="600"
+    y="335"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="18"
+    fill="#94A3B8"
+  >
     Building intelligent software, scalable systems &amp; digital experiences
   </text>
 
-  <g transform="translate(462 340)">
-    <rect width="276" height="45" rx="22.5" fill="#FFFFFF" fill-opacity="0.035" stroke="#22D3EE" stroke-opacity="0.35"/>
-    <text x="138" y="29" text-anchor="middle" fill="#E2E8F0"
-          font-family="Consolas, monospace"
-          font-size="14">
-      &gt; learning • building • evolving
-    </text>
+  <rect
+    x="412"
+    y="368"
+    width="376"
+    height="50"
+    rx="25"
+    fill="#FFFFFF"
+    fill-opacity=".025"
+    stroke="#22D3EE"
+    stroke-opacity=".3"
+  />
+
+  <text
+    x="447"
+    y="399"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="15"
+    fill="#22D3EE"
+  >
+    &gt;
+  </text>
+
+  <text
+    x="470"
+    y="399"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="15"
+    fill="#E2E8F0"
+  >
+    learning • building • evolving
+  </text>
+
+  <rect x="750" y="383" width="8" height="19" fill="#8B5CF6">
+    <animate
+      attributeName="opacity"
+      values="1;0;1"
+      dur=".8s"
+      repeatCount="indefinite"
+    />
+  </rect>
+
+  <g fill="#A78BFA">
+    <circle cx="145" cy="200" r="2.5">
+      <animate attributeName="cy" values="200;165;200" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1045" cy="190" r="2.5">
+      <animate attributeName="cy" values="190;150;190" dur="5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="1090" cy="390" r="2">
+      <animate attributeName="cy" values="390;350;390" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="275" cy="370" r="2">
+      <animate attributeName="cy" values="370;335;370" dur="5.5s" repeatCount="indefinite"/>
+    </circle>
   </g>
 
-  <path d="M80 375 C300 330, 450 405, 660 360 C850 320, 980 385, 1120 350"
-        stroke="url(#title)"
-        stroke-opacity="0.22"
-        stroke-width="1.5"
-        fill="none">
-    <animate attributeName="stroke-opacity" values="0.1;0.4;0.1" dur="4s" repeatCount="indefinite"/>
-  </path>
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="468"
+    rx="29"
+    fill="none"
+    stroke="url(#heroTitle)"
+    stroke-opacity=".35"
+  />
 </svg>

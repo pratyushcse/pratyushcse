@@ -1,0 +1,89 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="1200"
+  height="190"
+  viewBox="0 0 1200 190"
+  preserveAspectRatio="xMidYMid meet"
+>
+  <defs>
+    <linearGradient id="statsBg">
+      <stop stop-color="#050507"/>
+      <stop offset=".55" stop-color="#0B0714"/>
+      <stop offset="1" stop-color="#041018"/>
+    </linearGradient>
+
+    <linearGradient id="statsAccent">
+      <stop stop-color="#8B5CF6"/>
+      <stop offset=".5" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="190" rx="28" fill="url(#statsBg)"/>
+
+  <rect
+    x="1"
+    y="1"
+    width="1198"
+    height="188"
+    rx="27"
+    fill="none"
+    stroke="url(#statsAccent)"
+    stroke-opacity=".35"
+  />
+
+  <text
+    x="55"
+    y="55"
+    font-family="Consolas, Monaco, 'Courier New', monospace"
+    font-size="12"
+    font-weight="700"
+    letter-spacing="3"
+    fill="#22D3EE"
+  >
+    ANALYTICS // LIVE DATA
+  </text>
+
+  <text
+    x="55"
+    y="115"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="42"
+    font-weight="900"
+  >
+    <tspan fill="#F8FAFC">GITHUB </tspan>
+    <tspan fill="url(#statsAccent)">INTELLIGENCE</tspan>
+  </text>
+
+  <circle cx="1090" cy="95" r="8" fill="#22D3EE">
+    <animate
+      attributeName="opacity"
+      values=".2;1;.2"
+      dur="1.1s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <circle
+    cx="1090"
+    cy="95"
+    r="18"
+    fill="none"
+    stroke="#22D3EE"
+    stroke-opacity=".25"
+  >
+    <animate
+      attributeName="r"
+      values="12;30;12"
+      dur="2.3s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="stroke-opacity"
+      values=".4;0;.4"
+      dur="2.3s"
+      repeatCount="indefinite"
+    />
+  </circle>
+</svg>
