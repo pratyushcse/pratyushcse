@@ -181,3 +181,15 @@ Currently developing a modern website for a beach villa offering daily stays and
     />
   </picture>
 </p>
+
+---
+
+## 🧠 Developer Command Center
+
+<p align="center">
+  <img
+    src="./assets/terminal.svg"
+    width="100%"
+    alt="Pratyush Developer Command Center"
+  />
+</p>
