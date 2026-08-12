@@ -32,3 +32,69 @@ I'm **Pratyush**, a Full-Stack Developer, AI/ML enthusiast, and freelance develo
 > building     Full-Stack Web Applications + AI Projects
 > exploring    Generative AI + LLMs + Intelligent Applications
 > goal         Become a strong Software / AI / Full-Stack Engineer
+
+---
+
+## 🧩 Technology Arsenal
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=python,java,js,ts,react,nextjs,fastapi,spring,nodejs,mysql,mongodb,docker,git,github&perline=7" alt="Core Technology Stack" />
+</p>
+
+### 💻 Languages
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,java,js,ts,cpp,c" alt="Programming Languages" />
+</p>
+
+`Python` • `Java` • `JavaScript` • `TypeScript` • `C++` • `C`
+
+### 🎨 Frontend Engineering
+
+<p>
+  <img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind" alt="Frontend Technologies" />
+</p>
+
+`HTML5` • `CSS3` • `JavaScript` • `TypeScript` • `React` • `Next.js` • `Tailwind CSS`
+
+### ⚙️ Backend Engineering
+
+<p>
+  <img src="https://skillicons.dev/icons?i=python,fastapi,nodejs,spring" alt="Backend Technologies" />
+</p>
+
+`FastAPI` • `Spring Boot` • `Node.js` • `REST APIs`
+
+### 🧠 AI / Machine Learning
+
+<p>
+  <img src="https://skillicons.dev/icons?i=pytorch,opencv" alt="AI and Machine Learning Technologies" />
+</p>
+
+`PyTorch` • `Scikit-learn` • `Hugging Face Transformers` • `OpenCV` • `NLP`
+
+Currently expanding into:
+
+`Machine Learning` • `Deep Learning` • `Generative AI` • `LLMs`
+
+### 🗄️ Databases
+
+<p>
+  <img src="https://skillicons.dev/icons?i=mysql,mongodb,sqlite" alt="Database Technologies" />
+</p>
+
+`MySQL` • `MongoDB` • `SQLite`
+
+### 🛠️ Developer Tools
+
+<p>
+  <img src="https://skillicons.dev/icons?i=git,github,docker,vscode,linux" alt="Development Tools" />
+</p>
+
+`Git` • `GitHub` • `Docker` • `VS Code` • `Linux`
+
+<sub>
+Focused on continuously strengthening software engineering, AI/ML and full-stack development fundamentals.
+</sub>
+
+---
