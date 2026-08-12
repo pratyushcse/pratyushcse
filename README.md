@@ -134,3 +134,50 @@ Currently developing a modern website for a beach villa offering daily stays and
 **Tech:** Full-Stack Web Development
 
 **Status:** Currently Building
+
+
+---
+
+## 📊 GitHub Intelligence
+
+<p align="center">
+  <img
+    width="49%"
+    src="https://github-readme-stats.vercel.app/api?username=pratyushcse&show_icons=true&hide_border=true&bg_color=07070A&title_color=8B5CF6&icon_color=22D3EE&text_color=F8FAFC&ring_color=8B5CF6"
+    alt="Pratyush GitHub Stats"
+  />
+
+  <img
+    width="49%"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=pratyushcse&layout=compact&hide_border=true&bg_color=07070A&title_color=8B5CF6&text_color=F8FAFC"
+    alt="Pratyush Most Used Languages"
+  />
+</p>
+
+<p align="center">
+  <img
+    src="https://streak-stats.demolab.com?user=pratyushcse&theme=transparent&hide_border=true&background=07070A&ring=8B5CF6&fire=22D3EE&currStreakLabel=A78BFA&sideLabels=F8FAFC&dates=94A3B8&currStreakNum=F8FAFC&sideNums=F8FAFC"
+    alt="Pratyush GitHub Streak"
+  />
+</p>
+
+---
+
+## 🐍 Contribution Activity
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="https://raw.githubusercontent.com/pratyushcse/pratyushcse/output/github-contribution-grid-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="https://raw.githubusercontent.com/pratyushcse/pratyushcse/output/github-contribution-grid-snake.svg"
+    />
+    <img
+      alt="Pratyush contribution snake"
+      src="https://raw.githubusercontent.com/pratyushcse/pratyushcse/output/github-contribution-grid-snake.svg"
+    />
+  </picture>
+</p>
