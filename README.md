@@ -9,11 +9,11 @@
   />
 </p>
 
----
+
 
 ## 👋 About Me
 
-I'm **Pratyush**, a Full-Stack Developer, AI/ML enthusiast, and freelance developer focused on building useful, polished, and scalable digital experiences.
+I'm Pratyush, a Full-Stack Developer, AI/ML enthusiast, and freelance developer focused on building useful, polished, and scalable digital experiences.
 
 - 🔭 Currently building **full-stack web applications and AI-based projects**
 - 🧠 Learning **AI/ML, advanced Python, and software engineering**
@@ -23,11 +23,11 @@ I'm **Pratyush**, a Full-Stack Developer, AI/ML enthusiast, and freelance develo
 - 🌐 Portfolio: [pratyush.online](https://pratyush.online)
 - 📩 Email: [pratyushpoojary974@gmail.com](mailto:pratyushpoojary974@gmail.com)
 
----
+
 
 ## ⚡ Current Focus
 
-```text
+text
 > learning     AI/ML + Advanced Python + Software Engineering
 > building     Full-Stack Web Applications + AI Projects
 > exploring    Generative AI + LLMs + Intelligent Applications
@@ -182,9 +182,9 @@ Currently developing a modern website for a beach villa offering daily stays and
   </picture>
 </p>
 
----
 
-## 🧠 Developer Command Center
+
+🧠 Developer Command Center
 
 <p align="center">
   <img
