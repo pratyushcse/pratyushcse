@@ -98,3 +98,39 @@ Focused on continuously strengthening software engineering, AI/ML and full-stack
 </sub>
 
 ---
+
+## 🚀 Selected Engineering Work
+
+### AMJ Enterprises
+
+**LED Wall Rental & Visual Solutions Website**
+
+A modern business website created for an LED wall rental company to showcase rental services, visual installations, and customer enquiry options.
+
+**Tech:** HTML • CSS • JavaScript • Responsive Design
+
+[View Repository](https://github.com/pratyushcse/AMJ_Enterprises)
+
+---
+
+### Grace Enterprises
+
+**Professional Deep Cleaning Services Website**
+
+A responsive service-business website designed for a professional deep-cleaning company, with service presentation, business information, and direct customer contact options.
+
+**Tech:** HTML • CSS • JavaScript • Responsive Design
+
+[View Repository](https://github.com/pratyushcse/Grace_Enterprises)
+
+---
+
+### Aditya Beach Villa 🚧
+
+**Villa Rental & Hospitality Website**
+
+Currently developing a modern website for a beach villa offering daily stays and rentals, with a focus on property presentation, amenities, gallery, location, and booking enquiries.
+
+**Tech:** Full-Stack Web Development
+
+**Status:** Currently Building
